@@ -1,2 +1,4 @@
-# csd-340
-work for class CSD-340
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* Matthew Longley
+* Brett Stovall
