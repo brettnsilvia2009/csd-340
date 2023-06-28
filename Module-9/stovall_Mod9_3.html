@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<!--
+      Professor Longley
+       Assignment 9.3
+-->
+    <head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+       <script>
+           var firstVariableValue = "screaming";
+	   var secondVariableValue = "pretending";
+	   var thirdVariableValue = "vulnerable";
+	   var forthVariableValue = "crappy";
+       </script>
+    </head>
+
+    <body> 
+		<h1>Assignment 9.3: JavaScript, Part 1</h1>
+       <p> Movie Dialog
+       <p> “I watched my father burn to death. I can still remember him <span id = "screaming">_________</span>. The people who were there said my father died long before 	the tanks blew. They said it was me that was screaming.”
+       <p> “Maybe you’re lying to yourself. Maybe you’re not the good guy <span id = "pretending">_________</span> to be the bad guy. Maybe you’re the bad guy pretending to 	    be the good guy. Did you ever think about that?”
+       <p> “You’re Loyal To A Fault. Your Code Is About Family And That’s Great In The Holidays, But It Makes You Predictable. And In Our Line Of Work, Predictable Means 	    <span id = "vulnerable">_________</span>. And That Means I Can Reach Out And Break You Whenever I Want.” 
+       <p> “Every day for the last three weeks you’ve been coming in here and you’ve been asking me how the tuna is. Now, it was <span id = "crappy">_________</span> 	    	    yesterday, it was crappy the day before and guess what? It hasn’t changed.” 
+
+       <p>
+           <button type="button"
+             onclick="document.getElementById('screaming').innerHTML = firstVariableValue">screaming</button> <br /> 
+	   <button type="button"
+	     onclick="document.getElementById('pretending').innerHTML = secondVariableValue">pretending</button> <br />  
+	   <button type="button"
+             onclick="document.getElementById('vulnerable').innerHTML = thirdVariableValue">vulnerable</button> <br /> 
+	   <button type="button"
+	     onclick="document.getElementById('crappy').innerHTML = forthVariableValue">crappy</button> <br /> 
+       </p> 
+ </body>
+<html>
