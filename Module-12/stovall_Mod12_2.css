@@ -1,0 +1,53 @@
+/* Brett Stovall CSD340 Module 12 Assignment 12.2 CSS */
+
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+#container {
+    display: flex;
+}
+#books {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    float: left;
+    width: 45%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
+    border-color: red;
+}
+
+#lesson {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 45%;
+    float: right;
+    font-weight: 300;
+    padding: 10px;
+    border-style: dashed;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: red;
+    list-style-type: upper-roman;
+}
+
+#home {
+    float: right;
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    float: right;
+}
+a:hover {
+    text-decoration:underline;
+}
