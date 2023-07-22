@@ -1,0 +1,106 @@
+<!-- Brett Stovall Assignment 12.2
+/* Update */
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+
+        <!-- external CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="stovall_Mod12_2.css">
+
+        <!-- Google fonts for Oswald -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+    </head>
+<body>
+
+    <div id="container">
+
+        <script>
+            function sortAscending() {
+                var book = [
+                    "The Lord of the Rings: The Rings Goes South",
+                    "The Lord of the Rings: The Treason of Isengard",
+                    "The Lord of the Rings: The War of the Ring",
+                    "The Lord of the Rings: The End of the Third Age",
+                    "Area 51",
+                    "Eragon",
+                    "Inheritance",
+                    "Eldest",
+                    "Brisingr",
+                    "The Lord of the Rings: The Ring Sets Out",
+                    ];
+                
+                var bookSorted = book.slice().sort();               
+                var list = document.getElementById("favBooks");     
+                list.innerHTML = "";                                
+
+                for (var x = 0; x < bookSorted.length; x++) {       
+                    var listBook = document.createElement("li");    
+                    listBook.textContent = bookSorted[x];         
+                    list.appendChild(listBook);                   
+                }
+            }
+
+            function sortDescending() {
+                var book = [
+                    "The Lord of the Rings: The Rings Goes South",
+                    "The Lord of the Rings: The Treason of Isengard",
+                    "The Lord of the Rings: The War of the Ring",
+                    "The Lord of the Rings: The End of the Third Age",
+                    "Area 51",
+                    "Eragon",
+                    "Inheritance",
+                    "Eldest",
+                    "Brisingr",
+                    "The Lord of the Rings: The Ring Sets Out",
+                    ];
+                
+                var bookSorted = book.slice().sort().reverse();
+                var list = document.getElementById("favBooks");
+                list.innerHTML = "";
+
+                for (var x = 0; x < bookSorted.length; x++) {
+                    var listBook = document.createElement("li");
+                    listBook.textContent = bookSorted[x];
+                    list.appendChild(listBook);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id=”container”>
+            <h1>Assignment 12.2: JavaScript - Part 4</h1>
+            <div id="books">
+                <h3>Top 10 Favorite Books</h3>
+                <ol id = "favBooks">
+                <li>The Lord of the Rings: The Rings Goes South</li>
+                <li>The Lord of the Rings: The Treason of Isengard</li>
+                <li>The Lord of the Rings: The War of the Ring</li>
+                <li>The Lord of the Rings: The End of the Third Age</li>
+                <li>Area 51</li>
+                <li>Eragon</li>
+                <li>Inheritance</li>
+                <li>Eldest</li>
+                <li>Brisingr</li>
+                <li>The Lord of the Rings: The Ring Sets Out</li> 
+                </ol>
+                <button onclick="sortAscending()">Top to Bottom </button>
+                <button onclick="sortDescending()">Bottom to Top</button>
+            </div>
+            <div id="lesson">
+                <h3>5 Things I’ve Learned Since the Course Started</h3>
+                <ul>
+                <li>How to set up a GitHub Repository</li>
+                <li>How to format and structure an HTML document</li>
+                <li>How to create and add Google fonts to a Web page</li>
+                <li>How to create and add content to a CSS stylesheet</li>
+                <li>How to publish content to a GitHub repository</li>
+                </ul>
+            </div>
+            <div id="home">
+                <a href="https://brettnsilvia2009.github.io/csd-340/">Back to Landing Page</a>
+            </div>
+        </div>  
+    </body>
+</html>
